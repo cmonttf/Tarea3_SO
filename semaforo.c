@@ -34,14 +34,15 @@ int main(int argc, char* argv[]) {
   datos_compartidos_t datos_compartidos;
 
   srandom(time(NULL));
-
-  if (argc == 7) {    //nombre de programa mas 6 variables   (parametros de entrada por consola)
-    datos_compartidos.capacidad_almacen=atoi(argv[1]);
-    datos_compartidos.rondas=atoi(argv[2]);
-    datos_compartidos.demora_min_productor=atoi(argv[3]);
-    datos_compartidos.demora_max_productor=atoi(argv[4]);
-    datos_compartidos.demora_min_consumidor=atoi(argv[5]);
-    datos_compartidos.demora_max_consumidor=atoi(argv[6]);
+ if (argc == 5) {    //nombre de programa mas 4 variables   (parametros de entrada por consola)
+    //datos_compartidos.capacidad_almacen=atoi(argv[1]);
+    datos_compartidos.capacidad_almacen=random_entre(1, 10);
+   // datos_compartidos.rondas=atoi(argv[2]);
+    datos_compartidos.rondas=random_entre(1, 10);
+    datos_compartidos.demora_min_productor=atoi(argv[1]);
+    datos_compartidos.demora_max_productor=atoi(argv[2]);
+    datos_compartidos.demora_min_consumidor=atoi(argv[3]);
+    datos_compartidos.demora_max_consumidor=atoi(argv[4]);
   } else {
     printf("Usar: %s capacidad_almacen rondas demora_min_productor demora_max_productor demora_min_consumidor demora_max_consumidor\n", argv[0]);
     exit(EXIT_FAILURE);

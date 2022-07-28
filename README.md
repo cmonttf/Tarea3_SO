@@ -29,8 +29,8 @@ Para el funcionamiento en Linux, debemos seguir los siguientes pasos
 
 3. Luego debemos compilar el archivo .c de la siguiente forma:
 
-```gcc -o Tarea3 Tarea3.c -lpthread```
+```gcc -o semaphores semaphore.c -lpthread```
 
-4. Y por último ejecutamos el archivo ```Tarea3```
+4. Y por último ejecutamos el archivo ```semphore``` màs 4 variables las  cuales son el tiempo max y min del productor y el tiempo max  y min del  consumidor
 
-```/.Tarea3```
+```/semaphores 1 10 1 10```

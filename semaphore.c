@@ -1,6 +1,6 @@
 
 /* Programa de ejemplo de semaphore. */
-/* para compilar usar: gcc -o tarea3_ejemplo tarea3_ejemplo.c -lpthread */
+/* para compilar usar: gcc -o semaphore semaphore.c -lpthread */
 
 #include <pthread.h>
 #include <semaphore.h>

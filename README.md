@@ -33,6 +33,6 @@ Para el funcionamiento en Linux, debemos seguir los siguientes pasos
 
 4. Y por último ejecutamos el archivo ```semphore``` màs 4 variables las  cuales son el tiempo max y min del productor y el tiempo max  y min del  consumidor
 
-```/semaphores 1 10 1 10```
+```./semaphores 1 10 1 10```
 
 .
